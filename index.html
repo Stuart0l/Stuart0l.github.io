@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129767189-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-129767189-2');
-	</script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Xuhao Luo's Homepage</title>
+  <meta charset="UTF-8">
+  <title>Xuhao Luo's Homepage</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
-
 <body>
-	<div id="mainbody">
-		<h1>Xuhao Luo's Homepage</h1>
-		<p>This is a test page.</p>
-		<a href="Luo_Xuhao_CV.pdf">My CV</a><br>
-		<p>mail:
-			<a href="mailto:x3luo@eng.ucsd.edu">x3luo@eng.ucsd.edu</a>
-		</p>
-		<p>language:
-			<select onchange="window.location=this.value">
-				<option selected>English</option>
-				<option value="cn/">中文</option>
-				<option value="jp/">日本語</option>
-			</select>
-		</p>
-	</div>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Xuhao Luo',
+      repo: 'Stuart0l',
+      homepage: 'about.md',
+      themeColor: '#0F4C81',
+      coverpage: true,
+      loadSidebar: true
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
-
 </html>
