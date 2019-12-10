@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo, a first year master student in the computer science and engineering department at [UC San Diego](https://cse.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/).
+I'm Xuhao Luo, a first year master student in the computer science and engineering department at [UC San Diego](https://cse.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating system, computer architecture and FPGA.
 
 Contact: x3luo@eng.ucsd.edu
 
@@ -11,13 +11,13 @@ Contact: x3luo@eng.ucsd.edu
 
 ## Education
 
-- **B.S. in Applied Physics**  
-*Sep. 2015 - Jul. 2019*  
-University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
-
 - **M.S. in Computer Science**  
 *Sep. 2019 - Dec. 2020 (expected)*    
 University of California, San Diego
+
+- **B.S. in Applied Physics**  
+*Sep. 2015 - Jul. 2019*  
+University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
 
 ## Work Experience
 
