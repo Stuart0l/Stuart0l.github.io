@@ -14,3 +14,7 @@ I enjoy taking flights, and I'm an aviation enthusiast. I keep a record of every
 [![Instagram](./icon/instagram.svg ":size=30")](https://www.instagram.com/stuartluo/)
 [![LinkedIn](./icon/linkedin.svg ":size=30")](https://www.linkedin.com/in/xuhao-luo-611056162)
 [![twitter](./icon/twitter.svg ":size=30")](https://twitter.com/LuoStuart)
+
+## Links
+
+[Yizhou Shan's Homepage](http://lastweek.io)
