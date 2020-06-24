@@ -21,6 +21,10 @@ University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
 
 ## Work Experience
 
+- **[Microsoft Research Asia](https://www.msra.cn)**  
+ *Jun. 2020 - Now, Beijing, China*  
+Research Intern, Network Research Group
+
 - **[Agora.io](https://agora.io)**  
  *Jul. 2019 - Sep. 2019, Shanghai, China*  
 Software Engineer Intern, Cloud Platform
