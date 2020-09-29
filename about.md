@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo, a first year master student in the computer science and engineering department at [UC San Diego](https://cse.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating system, computer architecture and FPGA.
+I'm Xuhao Luo, a second year master student in the computer science and engineering department at [UC San Diego](https://cse.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating system, computer architecture and FPGA.
 
 Contact: x3luo@eng.ucsd.edu
 
@@ -22,7 +22,7 @@ University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
 ## Work Experience
 
 - **[Microsoft Research Asia](https://www.msra.cn)**  
- *Jun. 2020 - Now, Beijing, China*  
+ *Jun. 2020 - Sep. 2020, Beijing, China*  
 Research Intern, Network Research Group
 
 - **[Agora.io](https://agora.io)**  
