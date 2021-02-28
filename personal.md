@@ -4,8 +4,8 @@
 
 I enjoy taking flights, and I'm an aviation enthusiast. I keep a record of every flight I have taken.
 
-<a href='https://openflights.org/user/Xuhao Luo' target='_blank'>
-  <img src='https://openflights.org/banner/Xuhao Luo.png' width=400 height=70>
+<a href="https://my.flightradar24.com/xuhaoluo">
+  <img src="https://banners-my.flightradar24.com/xuhaoluo.png" alt="My Flightdiary.net profile" />
 </a>
 
 ## Social Media
