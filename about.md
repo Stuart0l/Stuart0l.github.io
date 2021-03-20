@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo, a second year master student in the [Dept of Computer Science and Engineering](https://cse.ucsd.edu) at [UC San Diego](https://www.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture.
+I'm Xuhao Luo (罗旭皓), a second year master student in the [Dept of Computer Science and Engineering](https://cse.ucsd.edu) at [UC San Diego](https://www.ucsd.edu). Currently I work in the [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture.
 
 Contact: x3luo@eng.ucsd.edu
 

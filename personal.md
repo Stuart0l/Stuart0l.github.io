@@ -17,4 +17,4 @@ I enjoy taking flights, and I'm an aviation enthusiast. I keep a record of every
 
 ## Links
 
-[Big Brother at Wuklab: Yizhou Shan's Homepage](http://lastweek.io)
+Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
