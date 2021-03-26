@@ -12,7 +12,7 @@ Contact: x3luo@eng.ucsd.edu
 ## Education
 
 - **M.S. in Computer Science**  
- *Sep. 2019 - Mar. 2021 (expected)*    
+ *Sep. 2019 - Mar. 2021*    
 University of California, San Diego
 
 - **B.S. in Applied Physics**  
