@@ -13,20 +13,31 @@ Contact: x3luo@eng.ucsd.edu
 
 ## Education
 
+- **Ph.D. in Computer Science**  
+   *Aug. 2021 - Now*  
+   University of Illinois, Urbana-Champaign
+
 - **M.S. in Computer Science**  
  *Sep. 2019 - Mar. 2021*    
-University of California, San Diego
+  University of California, San Diego
 
 - **B.S. in Applied Physics**  
  *Sep. 2015 - Jul. 2019*  
-University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
+  University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
 
 ## Work Experience
 
 - **[Microsoft Research Asia](https://www.msra.cn)**  
  *Jun. 2020 - Sep. 2020, Beijing, China*  
-Research Intern, Network Research Group
+  Research Intern, Network Research Group
 
 - **[Agora.io](https://agora.io)**  
  *Jul. 2019 - Sep. 2019, Shanghai, China*  
-Software Engineer Intern, Cloud Platform
+  Software Engineer Intern, Cloud Platform
+
+ ## Publication
+
+ **Clio: A Hardware-Software Co-Designed Disaggregated Memory System**  
+ Zhiyuan Guo, Yizhou Shan (co-first author), Xuhao Luo, Yutong Huang, Yiying Zhang  
+ [[Preprint]](https://arxiv.org/pdf/2108.03492.pdf)
+
