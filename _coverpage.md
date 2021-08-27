@@ -8,9 +8,9 @@
 	</a>
 </h1>
 
-> CSE Graduate Student at UC San Diego
+> CS Graduate Student at UIUC
 
-- 📧: [x3luo@eng.ucsd.edu](mailto:x3luo@eng.ucsd.edu)
+- 📧: [xuhaol2@illinois.edu](mailto:xuhaol2@illinois.edu)
 
 [About](#about)
 
