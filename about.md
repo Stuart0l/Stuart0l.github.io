@@ -6,8 +6,9 @@ Contact: xuhaol2@illinois.edu
 
 <p>
   My
-  <a href="/Luo_Xuhao_CV.pdf">CV</a>
+  <a href="/Luo_Xuhao_Resume.pdf">Résumé</a>
 </p>
+
 
 ## Education
 
