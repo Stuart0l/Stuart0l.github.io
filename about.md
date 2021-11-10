@@ -38,5 +38,5 @@ Contact: xuhaol2@illinois.edu
 
  **Clio: A Hardware-Software Co-Designed Disaggregated Memory System**  
  Zhiyuan Guo, Yizhou Shan (co-first author), *Xuhao Luo*, Yutong Huang, Yiying Zhang  
- [[Preprint]](https://arxiv.org/pdf/2108.03492.pdf) [[Code]](https://github.com/WukLab/Clio)
+ [[Code]](https://github.com/WukLab/Clio)
 
