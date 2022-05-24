@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo (罗旭皓), a first-year Ph.D. student in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Tianyin Xu](https://tianyin.github.io)  on system reliability. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
+I'm Xuhao Luo (罗旭皓), a first-year Ph.D. student in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Tianyin Xu](https://tianyin.github.io)  on distributed systems and system reliability. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
 
 Contact: xuhaol2@illinois.edu
 
@@ -25,6 +25,10 @@ Contact: xuhaol2@illinois.edu
   University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
 
 ## Work Experience
+
+- **[Amazon Web Service](https://aws.amazon.com)**  
+  *May. 2022 - Now, Seattle, WA, USA*  
+  Applied Scientist Intern, AWS S3
 
 - **[Microsoft Research Asia](https://www.msra.cn)**  
   *Jun. 2020 - Sep. 2020, Beijing, China*  
