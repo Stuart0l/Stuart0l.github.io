@@ -42,8 +42,8 @@ Contact: xuhaol2@illinois.edu
 
  **DepFast: Orchestrating Code of Quorum Systems**  
  *Xuhao Luo*, Weihai Shen, Shuai Mu, Tianyin Xu  
- ***USENIX ATC 2022***
+ ***USENIX ATC 2022*** [[Paper]](https://www.usenix.org/system/files/atc22-luo.pdf)[[Code]](https://github.com/stonysystems/depfast-ae)
 
  **Clio: A Hardware-Software Co-Designed Disaggregated Memory System**  
- Zhiyuan Guo, Yizhou Shan (co-first author), *Xuhao Luo*, Yutong Huang, Yiying Zhang  
+ Zhiyuan Guo*, Yizhou Shan* (*co-first author), *Xuhao Luo*, Yutong Huang, Yiying Zhang  
  ***ASPLOS 2022*** [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503222.3507762)[[Code]](https://github.com/WukLab/Clio)
