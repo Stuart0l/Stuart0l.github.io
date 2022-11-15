@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo (罗旭皓), a second-year Ph.D. student in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Tianyin Xu](https://tianyin.github.io)  on distributed systems and system reliability. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
+I'm Xuhao Luo (罗旭皓), a second-year Ph.D. student in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Aishwarya Ganesan](https://aishwaryaganesan.github.io/) and Prof. [Ramnatthan Alagappan](https://ramalagappan.github.io/) on distributed systems. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
 
 Contact: xuhaol2@illinois.edu
 
