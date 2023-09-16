@@ -40,6 +40,10 @@ Contact: xuhaol2@illinois.edu
 
 ## Publication
 
+ **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
+ *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
+ ***EuroSys 2024*** [To Appear]
+
  **DepFast: Orchestrating Code of Quorum Systems**  
  *Xuhao Luo*, Weihai Shen, Shuai Mu, Tianyin Xu  
  ***USENIX ATC 2022*** [[Paper]](https://www.usenix.org/system/files/atc22-luo.pdf)[[Code]](https://github.com/stonysystems/depfast-ae)
