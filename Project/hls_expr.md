@@ -250,7 +250,7 @@ The code style differs greatly from traditional software code. In fact, it's mor
 
 The `stream<type>` in function parameter list is a queue-like data structure, which will be synthesized into a stream interface. At the start of `case` statement, we check if the data is ready on the stream interface. If there is no data, the code will just terminate. This is mainly for the ease of software simulation, since `read()` will be blocked if it's called on an empty stream. Checking whether the stream is empty makes the whole function non-block, so we can test it in the following way:
 
-```clike
+```c++
 // populate test data
 for (i = 1:test_size)
 	in.write(test_data[i]);
