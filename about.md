@@ -42,7 +42,7 @@ Contact: xuhaol2@illinois.edu
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
  *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
- ***EuroSys 2024*** [To Appear]
+ ***EuroSys 2024*** [To Appear][[Code]](https://github.com/dassl-uiuc/compute-side-log)
 
  **DepFast: Orchestrating Code of Quorum Systems**  
  *Xuhao Luo*, Weihai Shen, Shuai Mu, Tianyin Xu  
