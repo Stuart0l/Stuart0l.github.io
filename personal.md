@@ -32,3 +32,4 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | Hawker Chan                     | *           | Singapore      | 4/30/2021 |
 | Ginza Shinohara                 | * *         | Tokyo, Japan   | 1/7/2024  |
 | Florilège                       | * *         | Tokyo, Japan   | 1/11/2024 |
+| Boka                            | *           | Chicago, US    | 1/24/2024 |
