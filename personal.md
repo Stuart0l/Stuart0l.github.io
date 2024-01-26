@@ -30,6 +30,6 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | Putien (Kitchener Rd)           | *           | Singapore      | 4/13/2021 |
 | Hill Street Tai Hwa Pork Noodle | *           | Singapore      | 4/22/2021 |
 | Hawker Chan                     | *           | Singapore      | 4/30/2021 |
-| Ginza Shinohara                 | * *         | Tokyo, Japan   | 1/7/2024  |
-| Florilège                       | * *         | Tokyo, Japan   | 1/11/2024 |
-| Boka                            | *           | Chicago, US    | 1/24/2024 |
+| [Ginza Shinohara](http://xhslink.com/9XKlhA)                 | * *         | Tokyo, Japan   | 1/7/2024  |
+| [Florilège](http://xhslink.com/IVnlhA)                       | * *         | Tokyo, Japan   | 1/11/2024 |
+| [Boka](http://xhslink.com/hlRlhA)                            | *           | Chicago, US    | 1/24/2024 |
