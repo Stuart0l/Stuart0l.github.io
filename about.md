@@ -13,8 +13,8 @@ Contact: xuhaol2@illinois.edu
 ## Education
 
 - **Ph.D. in Computer Science**  
-  *Aug. 2021 - Now*  
-  University of Illinois, Urbana-Champaign
+  *Aug. 2021 - May. 2026 (Expected)*  
+  University of Illinois Urbana-Champaign
 
 - **M.S. in Computer Science**  
   *Sep. 2019 - Mar. 2021*    
