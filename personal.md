@@ -33,6 +33,6 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | [Ginza Shinohara](http://xhslink.com/9XKlhA)                 | * *         | Tokyo, Japan   | 1/7/2024  |
 | [Florilège](http://xhslink.com/IVnlhA)                       | * *         | Tokyo, Japan   | 1/11/2024 |
 | [Boka](http://xhslink.com/hlRlhA)                            | *           | Chicago, US    | 1/24/2024 |
-| Omar Dhiab	| * | Paris, France | 4/29/2024 |
+| [Omar Dhiab](http://xhslink.com/gedAsJ)	| * | Paris, France | 4/29/2024 |
 | Alliance	| * | Paris, France | 4/29/2024 |
-| Epicure | * * * | Paris, France | 4/30/2024 |
+| [Epicure](http://xhslink.com/AX8zsJ) | * * * | Paris, France | 4/30/2024 |
