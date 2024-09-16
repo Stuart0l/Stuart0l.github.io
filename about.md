@@ -1,6 +1,6 @@
 # About
 
-I'm Xuhao Luo (罗旭皓), a third-year Ph.D. candidate in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Aishwarya Ganesan](https://aishwaryaganesan.github.io/) and Prof. [Ramnatthan Alagappan](https://ramalagappan.github.io/) on distributed systems. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
+I'm Xuhao Luo (罗旭皓), a fourth-year Ph.D. candidate in the [Dept. of Computer Science](https://cs.illinois.edu) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Aishwarya Ganesan](https://aishwaryaganesan.github.io/) and Prof. [Ramnatthan Alagappan](https://ramalagappan.github.io/) on distributed systems. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture. 
 
 Contact: xuhaol2@illinois.edu
 
@@ -40,6 +40,10 @@ Contact: xuhaol2@illinois.edu
   Software Engineer Intern, Cloud Platform
 
 ## Publication
+
+ **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
+ *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
+ ***SOSP 2024*** [To Appear]
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
  *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
