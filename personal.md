@@ -36,3 +36,4 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | [Omar Dhiab](http://xhslink.com/gedAsJ)	| * | Paris, France | 4/29/2024 |
 | Alliance	| * | Paris, France | 4/29/2024 |
 | [Epicure](http://xhslink.com/AX8zsJ) | * * * | Paris, France | 4/30/2024 |
+| [Elske](http://xhslink.com/a/hmPzxHT7WPQX)| * | Chicago, US | 10/6/2024 |
