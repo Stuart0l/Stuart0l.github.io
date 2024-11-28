@@ -43,7 +43,7 @@ Contact: xuhaol2@illinois.edu
 
  **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
  *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
- ***SOSP 2024*** [To Appear]
+ ***SOSP 2024*** [[paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)[[code]](https://github.com/dassl-uiuc/LazyLog-Artifact) <span style="color: red; font-weight: bold;">Best Paper Award</span>
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
  *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
