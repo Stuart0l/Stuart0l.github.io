@@ -43,11 +43,18 @@ Contact: xuhaol2@illinois.edu
 
  **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
  *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
- ***SOSP 2024*** [[paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)[[code]](https://github.com/dassl-uiuc/LazyLog-Artifact)[[slides]](/slides/LazyLog_presentation.pdf) <span style="color: red; font-weight: bold;">Best Paper Award</span>
+ ***SOSP 2024*** 
+ [[paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)
+ [[code]](https://github.com/dassl-uiuc/LazyLog-Artifact)
+ <a href="/slides/LazyLog_presentation.pdf">[slides]</a> 
+ <span style="color: red; font-weight: bold;">Best Paper Award</span>
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
  *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
- ***EuroSys 2024*** [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3627703.3629561)[[Code]](https://github.com/dassl-uiuc/compute-side-log)[[slides]](/slides/splitft_presentation.pdf)
+ ***EuroSys 2024*** 
+ [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3627703.3629561)
+ [[Code]](https://github.com/dassl-uiuc/compute-side-log)
+ <a href="/slides/splitft_presentation.pdf">[slides]</a>
 
  **DepFast: Orchestrating Code of Quorum Systems**  
  *Xuhao Luo*, Weihai Shen, Shuai Mu, Tianyin Xu  
