@@ -42,6 +42,10 @@ Contact: xuhaol2@illinois.edu
 
 ## Publication
 
+ **Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering**  
+ Shreesha G. Bhat, Tony Hong, *Xuhao Luo*, Jiyu Hu, Aishwarya Ganesan, Ramnatthan Alagappan  
+ ***OSDI 2025 (To appear)***
+
  **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
  *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
  ***SOSP 2024*** 
