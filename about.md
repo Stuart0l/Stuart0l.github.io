@@ -44,14 +44,18 @@ Contact: xuhaol2@illinois.edu
 
  **Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering**  
  Shreesha G. Bhat, Tony Hong, *Xuhao Luo*, Jiyu Hu, Aishwarya Ganesan, Ramnatthan Alagappan  
- ***OSDI 2025 (To appear)***
+ ***OSDI 2025*** 
+ [[Paper]](https://www.usenix.org/system/files/osdi25-bhat.pdf) 
+ [[Code]](https://github.com/dassl-uiuc/speclog-artifact)
+ [[Slides]](https://www.usenix.org/sites/default/files/conference/protected-files/osdi25_slides_bhat_shreesha.pdf)
+
 
  **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
  *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
  ***SOSP 2024*** 
- [[paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)
- [[code]](https://github.com/dassl-uiuc/LazyLog-Artifact)
- <a href="/slides/LazyLog_presentation.pdf">[slides]</a> 
+ [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)
+ [[Code]](https://github.com/dassl-uiuc/LazyLog-Artifact)
+ <a href="/slides/LazyLog_presentation.pdf">[Slides]</a> 
  <span style="color: red; font-weight: bold;">Best Paper Award</span>
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
