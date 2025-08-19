@@ -42,6 +42,10 @@ Contact: xuhaol2@illinois.edu
 
 ## Publication
 
+ **LazyLog: A New Shared Log Abstraction and Design for Modern Low-Latency Applications**  
+ *Xuhao Luo*, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
+ ***ACM Transactions on Computer Systems*** [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3750445)
+
  **Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering**  
  Shreesha G. Bhat, Tony Hong, *Xuhao Luo*, Jiyu Hu, Aishwarya Ganesan, Ramnatthan Alagappan  
  ***OSDI 2025*** 
@@ -56,7 +60,8 @@ Contact: xuhaol2@illinois.edu
  [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)
  [[Code]](https://github.com/dassl-uiuc/LazyLog-Artifact)
  <a href="/slides/LazyLog_presentation.pdf">[Slides]</a> 
- <span style="color: red; font-weight: bold;">Best Paper Award</span>
+ <span style="color: red; font-weight: bold;">Best Paper Award, Invited by ACM TOCS for extended
+publication</span>
 
  **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
  *Xuhao Luo*, Ramnatthan Alagappan, Aishwarya Ganesan  
