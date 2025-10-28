@@ -13,9 +13,6 @@ I enjoy taking flights, and I'm an aviation enthusiast. I keep a record of every
 [![Facebook](./icon/facebook.svg ":size=30")](https://www.facebook.com/profile.php?id=100017858018282)
 [![Instagram](./icon/instagram.svg ":size=30")](https://www.instagram.com/stuartluo/)
 [![LinkedIn](./icon/linkedin.svg ":size=30")](https://www.linkedin.com/in/xuhao-luo-611056162)
-[![twitter](./icon/twitter.svg ":size=30")](https://twitter.com/LuoStuart)
-
-<a class="twitter-timeline" data-width="350" data-height="500" href="https://twitter.com/LuoStuart?ref_src=twsrc%5Etfw">Tweets by LuoStuart</a>
 
 ## Links
 
