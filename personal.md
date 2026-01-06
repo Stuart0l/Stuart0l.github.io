@@ -35,3 +35,4 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | [Epicure](http://xhslink.com/AX8zsJ) | * * * | Paris, France | 4/30/2024 |
 | [Elske](http://xhslink.com/a/hmPzxHT7WPQX)| * | Chicago, US | 10/6/2024 |
 | The Modern | * * | NYC, US | 8/2/2025 |
+| Shanghai Cuisine | * * | Beijing, China | 12/28/2025 |
