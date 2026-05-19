@@ -36,3 +36,4 @@ Big Brother at Wuklab: [Yizhou Shan's Homepage](http://lastweek.io)
 | [Elske](http://xhslink.com/a/hmPzxHT7WPQX)| * | Chicago, US | 10/6/2024 |
 | The Modern | * * | NYC, US | 8/2/2025 |
 | Shanghai Cuisine | * * | Beijing, China | 12/28/2025 |
+| The Village Pub | * | Woodside, US | 5/17/2026 |
