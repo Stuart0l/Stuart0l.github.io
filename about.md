@@ -27,6 +27,10 @@ Contact: xuhaol2@illinois.edu
 
 ## Work Experience
 
+- **[Google](https://cloud.google.com)**  
+  *May. 2026 - Aug. 2026, Sunnyvale, CA, USA*  
+  Software Engineer Intern, Infra Bigtable
+
 - **[Amazon Web Service](https://aws.amazon.com)**  
   *May. 2024 - Aug. 2024, Seattle, WA, USA*  
   *May. 2022 - Aug. 2022, Seattle, WA, USA*  
