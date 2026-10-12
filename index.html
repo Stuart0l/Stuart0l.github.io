@@ -7,7 +7,6 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -39,9 +38,22 @@
     var num = 0;
 
     window.$docsify = {
-      mermaidConfig: {
-        querySelector: ".mermaid"
-      },
+      plugins: [
+        // Render mermaid code blocks after every page render (not just the first)
+        function (hook) {
+          hook.doneEach(function () {
+            var nodes = [];
+            document.querySelectorAll('pre[data-lang=mermaid]').forEach(function (pre) {
+              var div = document.createElement('div');
+              div.className = 'mermaid';
+              div.textContent = pre.textContent;
+              pre.parentNode.replaceChild(div, pre);
+              nodes.push(div);
+            });
+            if (nodes.length) mermaid.run({ nodes: nodes });
+          });
+        }
+      ],
 
       name: 'Xuhao Luo',
       repo: 'Stuart0l',
@@ -53,14 +65,11 @@
       subMaxLevel: 2
     }
   </script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false });</script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
   <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

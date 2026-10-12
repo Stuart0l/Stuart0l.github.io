@@ -73,7 +73,7 @@ Based on my experience, I categorize the usage of HLS into two different ways, *
 
 Memory processing HLS modules directly operate on data within the memory, usually BRAM (block RAM) in FPGA. This way is mostly used in applications like ML. Consider the simple case of  multiplying two 10×10 matrixes. The C++ software code will be like this:
 
-```c++
+```cpp
 void matmul(int a[10][10], int b[10][10], int c[10][10]) {
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
@@ -99,7 +99,7 @@ This piece of code is HLS synthesizable. The logic of the synthesized module is 
 
 According to the generated synthesis report, the whole multiplication takes 4221 cycles. To make this module run faster, optimizations need to be applied. Loop unroll and pipeline are two most used techniques in HLS. First add directives to unroll the inner-most loop:
 
-```c++
+```cpp
 void matmul(int a[10][10], int b[10][10], int c[10][10]) {
 #pragma HLS ARRAY_PARTITION variable=a dim=2
 #pragma HLS ARRAY_PARTITION variable=b dim=1
@@ -128,7 +128,7 @@ The `UNROLL` directive is added into the inner-most loop to make the 10 multipli
 
 More optimization can be applied. Add directive to pipeline the second loop:
 
-```c++
+```cpp
 void matmul(int a[10][10], int b[10][10], int c[10][10]) {
 #pragma HLS ARRAY_PARTITION variable=a dim=2
 #pragma HLS ARRAY_PARTITION variable=b dim=1
@@ -173,7 +173,7 @@ Generally, the code style of memory processing HLS codes is not much different f
 
 Stream processing HLS modules operate on data streams, through a stream interface (e.g. [AXI-Stream](https://developer.arm.com/documentation/ihi0051/a/Introduction/About-the-AXI4-Stream-protocol)). This way is used in applications such as packet processing. Consider the simple case of a packet processor, which takes input from a int data stream, add the values of two continuous inputs, and outputs the result to the output data stream. A straight-forward way to write this module is:
 
-```c++
+```cpp
 #include <hls_stream.h>
 
 void pktproc(hls::stream<int> &in, hls::stream<int> &out) {
@@ -210,7 +210,7 @@ in1-->|not get|in1
 in2-->|not get|in2
 ```
 
-```c++
+```cpp
 #include <hls_stream.h>
 
 enum status {
@@ -250,7 +250,7 @@ The code style differs greatly from traditional software code. In fact, it's mor
 
 The `stream<type>` in function parameter list is a queue-like data structure, which will be synthesized into a stream interface. At the start of `case` statement, we check if the data is ready on the stream interface. If there is no data, the code will just terminate. This is mainly for the ease of software simulation, since `read()` will be blocked if it's called on an empty stream. Checking whether the stream is empty makes the whole function non-block, so we can test it in the following way:
 
-```c++
+```cpp
 // populate test data
 for (i = 1:test_size)
 	in.write(test_data[i]);
