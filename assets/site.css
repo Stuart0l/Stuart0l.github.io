@@ -26,6 +26,11 @@
   --hue-2: calc(140 + var(--h2) * 0.98);
   --wash-1: light-dark(oklch(0.90 0.07 var(--hue-1)), oklch(0.36 0.075 var(--hue-1)));
   --wash-2: light-dark(oklch(0.90 0.07 var(--hue-2)), oklch(0.36 0.075 var(--hue-2)));
+  /* Aurora ribbons: the same hues plus their midpoint, a touch more vivid than the wash. */
+  --hue-3: calc((var(--hue-1) + var(--hue-2)) / 2 + 30);
+  --ribbon-1: light-dark(oklch(0.84 0.12 var(--hue-1)), oklch(0.46 0.12 var(--hue-1)));
+  --ribbon-2: light-dark(oklch(0.84 0.12 var(--hue-2)), oklch(0.46 0.12 var(--hue-2)));
+  --ribbon-3: light-dark(oklch(0.86 0.10 var(--hue-3)), oklch(0.44 0.10 var(--hue-3)));
 
   --sans: "Barlow", system-ui, sans-serif;
   --condensed: "Barlow Condensed", "Barlow", system-ui, sans-serif;
@@ -72,19 +77,64 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- Cover: the random gradient ---------- */
 
-/* The docsify gradient, dissolving into the paper instead of ending at an edge. */
-body::before {
-  content: "";
+/* The docsify gradient as an aurora: a static base wash with three soft ribbons
+   drifting over it, all dissolving into the paper instead of ending at an edge. */
+.aurora {
   position: absolute;
   inset: 0 0 auto;
   height: var(--wash-height);
   z-index: -1;
+  overflow: hidden;
   pointer-events: none;
   background: linear-gradient(to left bottom, var(--wash-1) 0%, var(--wash-2) 100%);
   -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent);
   mask-image: linear-gradient(to bottom, #000 45%, transparent);
 }
 body:has(.cover--home) { --wash-height: max(100vh, 52rem); }
+
+.aurora span {
+  position: absolute;
+  left: -25%;
+  width: 150%;
+  height: 55%;
+  border-radius: 50%;
+  opacity: 0.85;
+  will-change: transform;
+  animation: aurora-1 4s ease-in-out infinite alternate;
+}
+.aurora span:nth-child(1) {
+  top: -10%;
+  background: radial-gradient(closest-side, var(--ribbon-1), transparent);
+}
+.aurora span:nth-child(2) {
+  top: 15%;
+  background: radial-gradient(closest-side, var(--ribbon-2), transparent);
+  animation-name: aurora-2;
+  animation-duration: 6s;
+}
+.aurora span:nth-child(3) {
+  top: 35%;
+  height: 40%;
+  background: radial-gradient(closest-side, var(--ribbon-3), transparent);
+  animation-name: aurora-3;
+  animation-duration: 8s;
+}
+@keyframes aurora-1 {
+  0%   { transform: translate(-12%, 0) rotate(-10deg) scale(1, 0.8); }
+  50%  { transform: translate(6%, 12%) rotate(4deg) scale(1.15, 1.1); }
+  100% { transform: translate(14%, -4%) rotate(12deg) scale(0.9, 0.9); }
+}
+@keyframes aurora-2 {
+  0%   { transform: translate(14%, 6%) rotate(8deg) scale(1.1, 0.9); }
+  50%  { transform: translate(-8%, -10%) rotate(-6deg) scale(0.9, 1.2); }
+  100% { transform: translate(-16%, 8%) rotate(-14deg) scale(1.2, 0.8); }
+}
+@keyframes aurora-3 {
+  0%   { transform: translate(0, 0) rotate(-4deg) scale(0.9, 1); }
+  50%  { transform: translate(16%, -14%) rotate(10deg) scale(1.2, 0.8); }
+  100% { transform: translate(-10%, 6%) rotate(-12deg) scale(1, 1.2); }
+}
+.aurora.is-paused span { animation-play-state: paused; }
 
 .cover { padding: 0 var(--gutter); }
 .cover a, .topbar a { color: var(--ink); }
@@ -187,6 +237,7 @@ body:has(.cover--home) { --wash-height: max(100vh, 52rem); }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-4px); } }
 
 @media (prefers-reduced-motion: reduce) {
+  .aurora span { animation: none !important; }
   .nav .nav-menu { animation: none !important; }
   .hero-profiles .icon, .icon-img .icon { transition: none !important; }
   .nav summary::after { transition: none; }

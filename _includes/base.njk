@@ -74,6 +74,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
   <a class="skip" href="#main">Skip to content</a>
   <div class="topbar{% if coverClass == 'cover--home' %} topbar--home{% endif %}">
     <nav class="nav" aria-label="Site">
@@ -119,6 +120,13 @@
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
       });
+    })();
+    // Pause the aurora while it is scrolled out of view.
+    (function () {
+      var aurora = document.querySelector('.aurora');
+      new IntersectionObserver(function (entries) {
+        aurora.classList.toggle('is-paused', !entries[0].isIntersecting);
+      }).observe(aurora);
     })();
     // Frost the top bar once the page scrolls under it.
     (function () {
