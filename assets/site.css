@@ -100,7 +100,7 @@ body:has(.cover--home) { --wash-height: max(100vh, 52rem); }
   border-radius: 50%;
   opacity: 0.85;
   will-change: transform;
-  animation: aurora-1 4s ease-in-out infinite alternate;
+  animation: aurora-1 5s ease-in-out infinite alternate;
 }
 .aurora span:nth-child(1) {
   top: -10%;
@@ -110,14 +110,14 @@ body:has(.cover--home) { --wash-height: max(100vh, 52rem); }
   top: 15%;
   background: radial-gradient(closest-side, var(--ribbon-2), transparent);
   animation-name: aurora-2;
-  animation-duration: 6s;
+  animation-duration: 7s;
 }
 .aurora span:nth-child(3) {
   top: 35%;
   height: 40%;
   background: radial-gradient(closest-side, var(--ribbon-3), transparent);
   animation-name: aurora-3;
-  animation-duration: 8s;
+  animation-duration: 9s;
 }
 @keyframes aurora-1 {
   0%   { transform: translate(-12%, 0) rotate(-10deg) scale(1, 0.8); }
