@@ -1,0 +1,31 @@
+{% extends "base.njk" %}
+{% set coverClass = "cover--home" %}
+
+{% block cover %}
+<div class="hero">
+  <img class="hero-avatar" src="/logo.jpg" alt="" width="112" height="112">
+  <h1 class="hero-name">
+    <span class="hero-name-en">{{ title }}</span>
+    <span class="hero-name-zh" lang="zh-Hans">{{ nameZh }}</span>
+  </h1>
+  <p class="hero-tagline">{{ tagline }}</p>
+  <div class="hero-links">
+    <ul class="hero-docs">
+      {%- for link in links %}
+      <li><a href="{{ link.href }}">{{ link.text }}</a></li>
+      {%- endfor %}
+    </ul>
+    <ul class="hero-profiles">
+      {%- for p in profiles %}
+      <li><a href="{{ p.href }}" aria-label="{{ p.label }}" title="{{ p.label }}">{% icon p.icon %}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="prose prose--home">
+  {{ content | safe }}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.njk" %}
+{% set coverClass = "cover--page" %}
+
+{% block cover %}
+<h1 class="page-title">{{ title }}</h1>
+{% endblock %}
+
+{% block main %}
+<div class="page{% if toc %} page--toc{% endif %}">
+  {%- if toc %}
+  <nav class="toc" aria-label="On this page">
+    <p class="toc-title">On this page</p>
+    <ol>
+      {%- for h in content | toc %}
+      <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
+      {%- endfor %}
+    </ol>
+  </nav>
+  {%- endif %}
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</div>
+{% endblock %}

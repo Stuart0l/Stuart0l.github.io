@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title == "Xuhao Luo" %}Xuhao Luo{% else %}{{ title }} | Xuhao Luo{% endif %}</title>
+  <meta name="description" content="{{ description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="https://www.xuhaol.com{{ page.url }}">
+  <link rel="icon" href="/favicon.ico">
+  <script>
+    // Old docsify links (#/about?id=publication) → new paths.
+    (function (h) {
+      if (h.indexOf('#/') !== 0) return;
+      var parts = h.slice(2).split('?id='), p = parts[0].replace(/\.md$/, '');
+      var map = { '': '/', 'about': '/', 'personal': '/personal/', 'Project/hls_expr': '/projects/hls-experience/' };
+      if (p in map) location.replace(map[p] + (parts[1] ? '#' + parts[1] : ''));
+    })(location.hash);
+    // Random pastel hues per load, same formula as docsify's cover (0–254, 100%, 85%).
+    (function (s) {
+      s.setProperty('--h1', Math.floor(Math.random() * 255));
+      s.setProperty('--h2', Math.floor(Math.random() * 255));
+    })(document.documentElement.style);
+    // Theme: an explicit choice from the switch (localStorage) wins; otherwise follow the system.
+    // data-theme = explicit choice, data-scheme = the scheme in effect.
+    (function (root) {
+      var mq = matchMedia('(prefers-color-scheme: dark)');
+      var stored = function () { try { return localStorage.getItem('theme'); } catch (e) { return null; } };
+      window.applyTheme = function () {
+        var t = stored();
+        if (t) root.dataset.theme = t; else delete root.dataset.theme;
+        root.dataset.scheme = t || (mq.matches ? 'dark' : 'light');
+        document.dispatchEvent(new Event('themechange'));
+      };
+      window.setTheme = function (next) {
+        try {
+          // Choosing the system's own scheme goes back to following the system.
+          if (next === (mq.matches ? 'dark' : 'light')) localStorage.removeItem('theme');
+          else localStorage.setItem('theme', next);
+        } catch (e) {}
+        applyTheme();
+      };
+      mq.addEventListener('change', applyTheme);
+      applyTheme();
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E7%BD%97%E6%97%AD%E7%9A%93&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MZ6FSXMF');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R54FC66XX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4R54FC66XX');
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ6FSXMF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="topbar{% if coverClass == 'cover--home' %} topbar--home{% endif %}">
+    <nav class="nav" aria-label="Site">
+      <a class="nav-home" href="/">Xuhao Luo</a>
+      <ul>
+        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>About</a></li>
+        <li class="nav-group">
+          <details>
+            <summary{% if page.url.indexOf("/projects/") == 0 %} class="is-current"{% endif %}>Project</summary>
+            <ul class="nav-menu">
+              {%- for p in collections.project %}
+              <li><a href="{{ p.url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>{{ p.data.title }}</a></li>
+              {%- endfor %}
+            </ul>
+          </details>
+        </li>
+        <li><a href="/personal/"{% if page.url == "/personal/" %} aria-current="page"{% endif %}>Personal</a></li>
+        <li>
+          <button type="button" class="theme-switch" aria-label="Switch to dark mode" title="Switch to dark mode">
+            <span class="to-dark">{% icon "dark" %}</span><span class="to-light">{% icon "light" %}</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="cover {{ coverClass }}">
+    {% block cover %}{% endblock %}
+  </header>
+
+  <main id="main">
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>Xuhao Luo, <a href="mailto:xuhaol2@illinois.edu">xuhaol2@illinois.edu</a></p>
+  </footer>
+
+  <script>
+    // Close the Project menu on outside click or Escape.
+    (function () {
+      var menu = document.querySelector('.nav-group details');
+      document.addEventListener('click', function (e) { if (!menu.contains(e.target)) menu.open = false; });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+      });
+    })();
+    // Frost the top bar once the page scrolls under it.
+    (function () {
+      var bar = document.querySelector('.topbar');
+      var update = function () { bar.classList.toggle('is-stuck', window.scrollY > 8); };
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+    })();
+    // Light/dark switch.
+    (function () {
+      var btn = document.querySelector('.theme-switch');
+      var label = function () {
+        var text = document.documentElement.dataset.scheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+        btn.setAttribute('aria-label', text);
+        btn.title = text;
+      };
+      btn.addEventListener('click', function () {
+        setTheme(document.documentElement.dataset.scheme === 'dark' ? 'light' : 'dark');
+      });
+      document.addEventListener('themechange', label);
+      label();
+    })();
+  </script>
+  {%- if content.indexOf('class="mermaid"') != -1 %}
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+    // Keep each diagram's source so it can be redrawn when the theme changes.
+    const nodes = [...document.querySelectorAll("pre.mermaid")];
+    nodes.forEach((n) => (n.dataset.src = n.textContent));
+    const render = () => {
+      const dark = document.documentElement.dataset.scheme === "dark";
+      mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "neutral", fontFamily: "Barlow, sans-serif" });
+      nodes.forEach((n) => { n.removeAttribute("data-processed"); n.textContent = n.dataset.src; });
+      mermaid.run({ nodes });
+    };
+    document.addEventListener("themechange", render);
+    render();
+  </script>
+  {%- endif %}
+</body>
+</html>

@@ -1,0 +1,93 @@
+---
+layout: home.njk
+title: Xuhao Luo
+# nameZh: 罗旭皓
+tagline: CS Graduate Student at UIUC
+description: Xuhao Luo, Ph.D. candidate at UIUC working on distributed systems. Publications, résumé, and CV.
+links:
+  - { text: Résumé, href: /Luo_Xuhao_Resume.pdf }
+  - { text: CV, href: /Luo_Xuhao_CV.pdf }
+profiles:
+  - { icon: googlescholar, label: Google Scholar, href: "https://scholar.google.com/citations?user=inKO5XEAAAAJ" }
+  - { icon: github, label: GitHub, href: "https://github.com/Stuart0l" }
+  - { icon: linkedin, label: LinkedIn, href: "https://www.linkedin.com/in/xuhao-luo-611056162" }
+  - { icon: mail, label: "Email xuhaol2@illinois.edu", href: "mailto:xuhaol2@illinois.edu" }
+---
+
+## About
+
+I'm Xuhao Luo (罗旭皓), a final-year Ph.D. candidate in the [Siebel School of Computing and Data Science](https://siebelschool.illinois.edu/) at University of Illinois Urbana-Champaign ([UIUC](https://illinois.edu/)). Currently I work with Prof. [Aishwarya Ganesan](https://aishwaryaganesan.github.io/) and Prof. [Ramnatthan Alagappan](https://ramalagappan.github.io/) on distributed systems. Previously, I got my M.S. in Computer Science from [UC San Diego](https://ucsd.edu), where I worked in [WukLab](http://wuklab.io) with Prof. [Yiying Zhang](https://cseweb.ucsd.edu/~yiying/) on operating systems, networking, and computer architecture.
+
+## Education
+
+- **Ph.D. in Computer Science**  
+  *Aug. 2021 - Nov. 2026 (Expected)*  
+  University of Illinois Urbana-Champaign
+
+- **M.S. in Computer Science**  
+  *Sep. 2019 - Mar. 2021*  
+  University of California, San Diego
+
+- **B.S. in Applied Physics**  
+  *Sep. 2015 - Jul. 2019*  
+  University of Science and Technology of China ([USTC](https://en.ustc.edu.cn))
+
+## Work Experience
+
+- **[Google](https://cloud.google.com)**  
+  *May. 2026 - Aug. 2026, Sunnyvale, CA, USA*  
+  Software Engineer Intern, Infra Bigtable
+
+- **[Amazon Web Service](https://aws.amazon.com)**  
+  *May. 2024 - Aug. 2024, Seattle, WA, USA*  
+  *May. 2022 - Aug. 2022, Seattle, WA, USA*  
+  Applied Scientist Intern, AWS S3
+
+- **[Microsoft Research Asia](https://www.msra.cn)**  
+  *Jun. 2020 - Sep. 2020, Beijing, China*  
+  Research Intern, Network Research Group
+
+- **[Agora.io](https://agora.io)**  
+  *Jul. 2019 - Sep. 2019, Shanghai, China*  
+  Software Engineer Intern, Cloud Platform
+
+## Publication
+
+- **LazyLog: A New Shared Log Abstraction and Design for Modern Low-Latency Applications**  
+  ***Xuhao Luo***, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
+  ***ACM Transactions on Computer Systems***  
+  [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3750445)
+
+- **Low End-to-End Latency atop a Speculative Shared Log with Fix-Ante Ordering**  
+  Shreesha G. Bhat, Tony Hong, ***Xuhao Luo***, Jiyu Hu, Aishwarya Ganesan, Ramnatthan Alagappan  
+  ***OSDI 2025***  
+  [[Paper]](https://www.usenix.org/system/files/osdi25-bhat.pdf)
+  [[Code]](https://github.com/dassl-uiuc/speclog-artifact)
+  [[Slides]](https://www.usenix.org/sites/default/files/conference/protected-files/osdi25_slides_bhat_shreesha.pdf)
+
+- **LazyLog: A New Shared Log Abstraction for Low-Latency Applications**  
+  ***Xuhao Luo***, Shreesha G. Bhat\*, Jiyu Hu\* (\*equal contribution), Ramnatthan Alagappan, Aishwarya Ganesan  
+  ***SOSP 2024***  
+  <span class="award">Best Paper Award, Invited by ACM TOCS for extended publication</span>  
+  [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3694715.3695983)
+  [[Code]](https://github.com/dassl-uiuc/LazyLog-Artifact)
+  [[Slides]](/slides/LazyLog_presentation.pdf)
+
+- **SplitFT: Fault Tolerance for Disaggregated Datacenters via Remote Memory Logging**  
+  ***Xuhao Luo***, Ramnatthan Alagappan, Aishwarya Ganesan  
+  ***EuroSys 2024***  
+  [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3627703.3629561)
+  [[Code]](https://github.com/dassl-uiuc/compute-side-log)
+  [[Slides]](/slides/splitft_presentation.pdf)
+
+- **DepFast: Orchestrating Code of Quorum Systems**  
+  ***Xuhao Luo***, Weihai Shen, Shuai Mu, Tianyin Xu  
+  ***USENIX ATC 2022***  
+  [[Paper]](https://www.usenix.org/system/files/atc22-luo.pdf)
+  [[Code]](https://github.com/stonysystems/depfast-ae)
+
+- **Clio: A Hardware-Software Co-Designed Disaggregated Memory System**  
+  Zhiyuan Guo\*, Yizhou Shan\* (\*co-first author), ***Xuhao Luo***, Yutong Huang, Yiying Zhang  
+  ***ASPLOS 2022***  
+  [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503222.3507762)
+  [[Code]](https://github.com/WukLab/Clio)

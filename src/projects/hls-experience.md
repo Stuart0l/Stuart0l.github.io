@@ -1,4 +1,10 @@
-# HLS Experience
+---
+layout: page.njk
+title: HLS Experience
+description: Notes from two years of FPGA development with Vivado HLS — design flow, memory vs. stream processing, and limitations.
+toc: true
+tags: project
+---
 
 I have been using Vivado HLS (now [Vitis HLS](https://www.xilinx.com/products/design-tools/vivado/integration/esl-design.html)) during the past two years. In 2018 I interned in Prof. [Zhiru Zhang](https://www.csl.cornell.edu/~zhiruz/index.html)'s group (who had co-founded AutoESL, which was later acquired by Xilinx and became Vivado HLS) building ML accelerators. From 2019 to 2020 I worked at UCSD building network devices. Here are the experiences I have obtained during my previous development.
 
