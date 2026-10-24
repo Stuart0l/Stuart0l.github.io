@@ -19,9 +19,13 @@
   --tok-function: light-dark(#6b3fa0, #c7a8ff);
   --tok-macro: light-dark(#8a5a00, #e3b866);
   --tok-punct: light-dark(#3d4856, #a9b3bf);
-  /* Same random hues: pastels in light mode, deep tones in dark mode. */
-  --wash-1: light-dark(hsl(var(--h1), 100%, 85%), hsl(var(--h1), 65%, 24%));
-  --wash-2: light-dark(hsl(var(--h2), 100%, 85%), hsl(var(--h2), 65%, 24%));
+  /* The two random hues (0–254, as docsify) map onto one OKLCH hue arc,
+     140°→390°, skipping brown/olive (≈30°–140°). Both modes use the same hue,
+     so switching keeps the colour: pastel tint in light, muted tint in dark. */
+  --hue-1: calc(140 + var(--h1) * 0.98);
+  --hue-2: calc(140 + var(--h2) * 0.98);
+  --wash-1: light-dark(oklch(0.90 0.07 var(--hue-1)), oklch(0.36 0.075 var(--hue-1)));
+  --wash-2: light-dark(oklch(0.90 0.07 var(--hue-2)), oklch(0.36 0.075 var(--hue-2)));
 
   --sans: "Barlow", system-ui, sans-serif;
   --condensed: "Barlow Condensed", "Barlow", system-ui, sans-serif;
