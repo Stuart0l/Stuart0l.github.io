@@ -508,7 +508,7 @@ pre.mermaid {
 .toc ol { margin: 0; padding-left: 1.25rem; color: var(--slate); }
 .toc li { margin: 0.3rem 0; }
 .toc a { color: var(--ink); text-decoration: none; }
-.toc a:hover { text-decoration: underline; }
+.toc a:hover, .toc a[aria-current] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 
 @media (min-width: 64rem) {
   .page--toc {

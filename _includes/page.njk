@@ -20,5 +20,28 @@
   <div class="prose">
     {{ content | safe }}
   </div>
+  {%- if toc %}
+  <script>
+    // Underline the contents entry for the section currently being read.
+    (function () {
+      var links = [].slice.call(document.querySelectorAll('.toc a'));
+      var heads = links.map(function (a) { return document.getElementById(a.hash.slice(1)); });
+      var current = null, queued = false;
+      var update = function () {
+        queued = false;
+        var line = innerHeight * 0.3, i = 0;
+        heads.forEach(function (h, j) { if (h.getBoundingClientRect().top <= line) i = j; });
+        if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) i = heads.length - 1;
+        if (links[i] === current) return;
+        if (current) current.removeAttribute('aria-current');
+        current = links[i];
+        current.setAttribute('aria-current', 'location');
+      };
+      addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+      addEventListener('resize', update);
+      update();
+    })();
+  </script>
+  {%- endif %}
 </div>
 {% endblock %}
