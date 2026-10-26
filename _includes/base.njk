@@ -17,10 +17,23 @@
       var map = { '': '/', 'about': '/', 'personal': '/personal/', 'Project/hls_expr': '/projects/hls-experience/' };
       if (p in map) location.replace(map[p] + (parts[1] ? '#' + parts[1] : ''));
     })(location.hash);
-    // Random pastel hues per load, same formula as docsify's cover (0–254, 100%, 85%).
+    // Random hues, same formula as docsify's cover (0–254). They are picked on a
+    // reload or a new visit and kept while navigating within the site, along with
+    // the aurora's start time so its animation continues across pages.
     (function (s) {
-      s.setProperty('--h1', Math.floor(Math.random() * 255));
-      s.setProperty('--h2', Math.floor(Math.random() * 255));
+      var saved = null;
+      try {
+        var nav = performance.getEntriesByType('navigation')[0];
+        var internal = document.referrer && new URL(document.referrer).origin === location.origin;
+        if (nav && nav.type !== 'reload' && internal) saved = JSON.parse(sessionStorage.getItem('aurora'));
+      } catch (e) {}
+      if (!saved) {
+        saved = { h1: Math.floor(Math.random() * 255), h2: Math.floor(Math.random() * 255), t0: Date.now() };
+        try { sessionStorage.setItem('aurora', JSON.stringify(saved)); } catch (e) {}
+      }
+      s.setProperty('--h1', saved.h1);
+      s.setProperty('--h2', saved.h2);
+      window.auroraStart = saved.t0;
     })(document.documentElement.style);
     // Theme: an explicit choice from the switch (localStorage) wins; otherwise follow the system.
     // data-theme = explicit choice, data-scheme = the scheme in effect.
@@ -80,10 +93,12 @@
     <nav class="nav" aria-label="Site">
       <a class="nav-home" href="/">Xuhao Luo</a>
       <ul>
-        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>About</a></li>
+        {%- set indicator = '<span class="nav-indicator" aria-hidden="true"></span>' %}
+        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>About{% if page.url == "/" %}{{ indicator | safe }}{% endif %}</a></li>
         <li class="nav-group">
           <details>
-            <summary{% if page.url.indexOf("/projects/") == 0 %} class="is-current"{% endif %}>Project</summary>
+            {%- set inProjects = page.url.indexOf("/projects/") == 0 %}
+            <summary{% if inProjects %} class="is-current"{% endif %}>Project{% if inProjects %}{{ indicator | safe }}{% endif %}</summary>
             <ul class="nav-menu">
               {%- for p in collections.project %}
               <li><a href="{{ p.url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>{{ p.data.title }}</a></li>
@@ -91,7 +106,7 @@
             </ul>
           </details>
         </li>
-        <li><a href="/personal/"{% if page.url == "/personal/" %} aria-current="page"{% endif %}>Personal</a></li>
+        <li><a href="/personal/"{% if page.url == "/personal/" %} aria-current="page"{% endif %}>Personal{% if page.url == "/personal/" %}{{ indicator | safe }}{% endif %}</a></li>
         <li>
           <button type="button" class="theme-switch" aria-label="Switch to dark mode" title="Switch to dark mode">
             <span class="to-dark">{% icon "dark" %}</span><span class="to-light">{% icon "light" %}</span>
@@ -100,11 +115,12 @@
       </ul>
     </nav>
   </div>
-  <header class="cover {{ coverClass }}">
+  {%- set vtSlug = page.url | replace("/", "-") %}
+  <header class="cover {{ coverClass }}" style="view-transition-name: cover{{ vtSlug }}">
     {% block cover %}{% endblock %}
   </header>
 
-  <main id="main">
+  <main id="main" style="view-transition-name: main{{ vtSlug }}">
     {% block main %}{% endblock %}
   </main>
 
@@ -121,12 +137,21 @@
         if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
       });
     })();
-    // Pause the aurora while it is scrolled out of view.
+    // Keep the aurora in phase with this visit's start time, so each page resumes
+    // the ribbons where the previous one left them. It stops while scrolled out of
+    // view and is re-synced when it returns or the page comes back from the bfcache.
     (function () {
       var aurora = document.querySelector('.aurora');
+      var sync = function () {
+        var t = Date.now() - auroraStart;
+        aurora.getAnimations({ subtree: true }).forEach(function (a) { a.currentTime = t; });
+      };
+      sync();
       new IntersectionObserver(function (entries) {
         aurora.classList.toggle('is-paused', !entries[0].isIntersecting);
+        if (entries[0].isIntersecting) sync();
       }).observe(aurora);
+      addEventListener('pageshow', function (e) { if (e.persisted) sync(); });
     })();
     // Frost the top bar once the page scrolls under it.
     (function () {
